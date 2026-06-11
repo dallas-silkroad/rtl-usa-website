@@ -35,7 +35,7 @@
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body:    'Inter', system-ui, sans-serif;
   --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
-  --maxw: 1200px;
+  --maxw: 1320px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -83,17 +83,16 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   border-bottom: 1px solid var(--line);
 }
 .nav-inner {
-  max-width: var(--maxw); margin: 0 auto; padding: 16px 28px;
+  max-width: var(--maxw); margin: 0 auto; padding: 18px 32px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.brand { display: flex; align-items: center; gap: 12px; font-family: var(--font-display); font-weight: 700; font-size: 21px; letter-spacing: -0.01em; }
-.brand .mark {
-  width: 34px; height: 34px; border-radius: 9px;
-  background: linear-gradient(135deg, var(--cyan), var(--cyan-deep));
-  display: grid; place-items: center; color: var(--navy); font-weight: 700; font-size: 15px;
-  box-shadow: 0 0 22px rgba(24, 200, 255, 0.35);
+.brand { display: flex; align-items: center; }
+.brand .brand-logo { height: 46px; width: auto; display: block; }
+.brand .brand-tag { display: inline; }
+@media (max-width: 700px) {
+  .brand .brand-logo { height: 38px; }
+  .brand .brand-tag { display: none; }
 }
-.brand .tld { color: var(--cyan); }
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a { font-size: 14.5px; color: var(--slate); transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
@@ -389,7 +388,60 @@ html { scroll-padding-top: 80px; }
 <body>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="#home" class="brand"><span class="mark">RTL</span> Real Time Logistics<span class="tld">.</span></a>
+    <a href="#home" class="brand" aria-label="RTL Real Time Logistics — Patented Secure Delivery">
+      <svg class="brand-logo" viewBox="0 0 470 92" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title>RTL Real Time Logistics</title>
+        <defs>
+          <linearGradient id="navSilver" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f4f8fc"/><stop offset="42%" stop-color="#cdd9e6"/>
+            <stop offset="58%" stop-color="#9fb1c4"/><stop offset="100%" stop-color="#dee7f0"/>
+          </linearGradient>
+          <linearGradient id="navSilverThin" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e6eef6"/><stop offset="100%" stop-color="#9aabbe"/>
+          </linearGradient>
+          <linearGradient id="navCyan" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0a8fc4"/><stop offset="50%" stop-color="#18c8ff"/><stop offset="100%" stop-color="#5fe0ff"/>
+          </linearGradient>
+          <linearGradient id="navVault" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2c486a"/>
+<stop offset="100%" stop-color="#1a3147"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(4,7)">
+          <rect x="-3" y="-3" width="84" height="84" rx="15" fill="none" stroke="#4a7299" stroke-width="1"/>
+          <rect x="3" y="3" width="72" height="72" rx="11" fill="url(#navVault)" stroke="#6b93ba" stroke-width="1"/>
+          <rect x="12" y="14" width="54" height="17" rx="4" fill="#16314d" stroke="#5a82a8" stroke-width="1"/>
+          <rect x="17" y="20" width="44" height="5" rx="2.5" fill="url(#navCyan)"/>
+          <rect x="12" y="37" width="54" height="29" rx="4" fill="#16314d" stroke="#5a82a8" stroke-width="1"/>
+          <line x1="22" y1="37" x2="22" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+          <line x1="29" y1="37" x2="29" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+          <line x1="35" y1="37" x2="35" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+          <line x1="42" y1="37" x2="42" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+          <line x1="48" y1="37" x2="48" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+          <line x1="55" y1="37" x2="55" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+          <line x1="61" y1="37" x2="61" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+          <circle cx="39" cy="9" r="2.4" fill="#5fe0ff"/>
+        </g>
+        <g transform="translate(98,14)" fill="url(#navSilver)">
+          <path d="M0 0L9 0L9 54L0 54 Z"/>
+          <path d="M9 0L52 0L52 9L9 9 Z"/>
+          <path d="M43 0L52 0L52 30L43 30 Z"/>
+          <path d="M9 21L52 21L52 30L9 30 Z"/>
+          <path d="M9 21L18 21L52 54L43 54 Z"/>
+        </g>
+        <g transform="translate(167,14)" fill="url(#navSilver)">
+          <path d="M0 0L43 0L43 9L0 9 Z"/>
+          <path d="M17 9L26 9L26 54L17 54 Z"/>
+        </g>
+        <g transform="translate(217,14)" fill="url(#navSilver)">
+          <path d="M0 0L9 0L9 54L0 54 Z"/>
+          <path d="M0 45L43 45L43 54L0 54 Z"/>
+        </g>
+        <g class="brand-tag">
+          <text x="98" y="87" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="16.5" font-weight="500" letter-spacing="3" fill="#7fe6ff">PATENTED SECURE DELIVERY</text>
+        </g>
+      </svg>
+    </a>
     <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
@@ -1152,7 +1204,55 @@ html { scroll-padding-top: 80px; }
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="footer-brand">Real Time Logistics<span class="accent">.</span></div>
+        <svg class="footer-logo" viewBox="0 0 420 92" role="img" xmlns="http://www.w3.org/2000/svg" style="height:74px;width:auto;display:block;margin-bottom:16px;">
+          <title>RTL Real Time Logistics — Patented Secure Delivery</title>
+          <defs>
+            <linearGradient id="ftSilver" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f4f8fc"/><stop offset="42%" stop-color="#cdd9e6"/>
+              <stop offset="58%" stop-color="#9fb1c4"/><stop offset="100%" stop-color="#dee7f0"/>
+            </linearGradient>
+            <linearGradient id="ftSilverThin" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e6eef6"/><stop offset="100%" stop-color="#9aabbe"/>
+            </linearGradient>
+            <linearGradient id="ftCyan" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#0a8fc4"/><stop offset="50%" stop-color="#18c8ff"/><stop offset="100%" stop-color="#5fe0ff"/>
+            </linearGradient>
+            <linearGradient id="ftVault" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2c486a"/><stop offset="100%" stop-color="#1a3147"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(4,7)">
+            <rect x="-3" y="-3" width="84" height="84" rx="15" fill="none" stroke="#4a7299" stroke-width="1"/>
+            <rect x="3" y="3" width="72" height="72" rx="11" fill="url(#ftVault)" stroke="#6b93ba" stroke-width="1"/>
+            <rect x="12" y="14" width="54" height="17" rx="4" fill="#16314d" stroke="#5a82a8" stroke-width="1"/>
+            <rect x="17" y="20" width="44" height="5" rx="2.5" fill="url(#ftCyan)"/>
+            <rect x="12" y="37" width="54" height="29" rx="4" fill="#16314d" stroke="#5a82a8" stroke-width="1"/>
+            <line x1="22" y1="37" x2="22" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+            <line x1="29" y1="37" x2="29" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+            <line x1="35" y1="37" x2="35" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+            <line x1="42" y1="37" x2="42" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+            <line x1="48" y1="37" x2="48" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+            <line x1="55" y1="37" x2="55" y2="66" stroke="#5fe0ff" stroke-width="1" opacity="0.95"/>
+            <line x1="61" y1="37" x2="61" y2="66" stroke="#6b93ba" stroke-width="0.6"/>
+            <circle cx="39" cy="9" r="2.4" fill="#5fe0ff"/>
+          </g>
+          <g transform="translate(98,9)" fill="url(#ftSilver)">
+            <path d="M0 0L9 0L9 54L0 54 Z"/>
+            <path d="M9 0L52 0L52 9L9 9 Z"/>
+            <path d="M43 0L52 0L52 30L43 30 Z"/>
+            <path d="M9 21L52 21L52 30L9 30 Z"/>
+            <path d="M9 21L18 21L52 54L43 54 Z"/>
+          </g>
+          <g transform="translate(167,9)" fill="url(#ftSilver)">
+            <path d="M0 0L43 0L43 9L0 9 Z"/>
+            <path d="M17 9L26 9L26 54L17 54 Z"/>
+          </g>
+          <g transform="translate(217,9)" fill="url(#ftSilver)">
+            <path d="M0 0L9 0L9 54L0 54 Z"/>
+            <path d="M0 45L43 45L43 54L0 54 Z"/>
+          </g>
+          <text x="98" y="78" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="16" font-weight="500" letter-spacing="2.8" fill="#7fe6ff">PATENTED SECURE DELIVERY</text>
+        </svg>
         <p>Patented smart delivery infrastructure, available for licensing to the brands building the connected home and the modern last mile.</p>
       </div>
       <div class="footer-col">
