@@ -404,6 +404,8 @@ html { scroll-padding-top: 80px; }
 .faq-item[open] summary::after { content: "\2013"; }
 .faq-item .faq-a { color: var(--slate); font-size: 16.5px; padding: 0 0 28px; max-width: 70ch; }
 .faq-item .faq-a p + p { margin-top: 12px; }
+.faq-item .faq-a ul { margin: 12px 0 12px 20px; padding: 0; }
+.faq-item .faq-a li { margin-bottom: 10px; }
 .faq-item .faq-a a { color: var(--cyan); }
 .faq-item .faq-a a:hover { text-decoration: underline; }
 .faq-group { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cyan); margin: 56px 0 6px; }
@@ -502,7 +504,15 @@ html { scroll-padding-top: 80px; }
      "name": "What is porch piracy?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Porch piracy is the theft of delivered packages left unattended at a doorstep, porch, or lobby before the recipient retrieves them. It is a last-mile problem: the package has been delivered correctly, but nothing secures it between the driver's hand and the homeowner's.Industry estimates put the scale at more than 120 million packages stolen from U.S. doorsteps a year, roughly $12 billion in annual losses across consumers and industry, and about one in four U.S. households reporting a stolen package within a year."
+      "text": "Porch piracy is the theft of delivered packages left unattended at a doorstep, porch, or lobby before the recipient retrieves them. It is a last-mile problem: the package has been delivered correctly, but nothing secures it between the driver's hand and the homeowner's. The U.S. Postal Service Office of Inspector General put the scale at at least 58 million packages stolen in 2024, with estimated annual losses between $5.2 billion and $16 billion depending on the survey, and up to one in four Americans affected. The OIG also notes there is no single authoritative source for package theft data, which is why estimates vary."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How big is porch piracy, by the numbers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "USPS Office of Inspector General (Package Theft in the United States, RISC-WP-25-002, May 2025): at least 58 million packages stolen in 2024, estimated losses of $5.2 billion to $16 billion a year, average stolen package worth $50 to $204. Security.org 2026 Package Theft Report (survey of 3,494 U.S. adults, October 2026): three in ten American adults, about 80 million people, have had a package stolen, up from 24 percent a year earlier; an estimated 47.7 million victims in the past year with stolen packages worth about $7.7 billion; adults expect about 28 deliveries each between October and December; 49 percent worry more about theft during the holidays and 37 percent have hesitated to order online because of theft concerns; apartment residents were more than three times as likely as single-family homeowners to have a package stolen in the past three months (10 percent versus 3 percent). SafeWise, as cited by the OIG: estimated 2024 losses of $945 million in New York City, $450 million in Philadelphia, $262 million in Chicago, $232 million in Washington, D.C., and $207 million in Houston. Statista and Pitney Bowes, as cited by the OIG: U.S. e-commerce revenue projected to grow from $1.22 trillion in 2024 to $1.88 trillion by 2029, and parcel volume from 21.7 billion in 2023 to a forecast 28.3 billion in 2028. The OIG also notes that retailers often absorb replacement costs, carriers have no obligation to use a customer-provided lockbox, and fragmented reporting means no one has a full picture."
      }
     },
     {
@@ -686,7 +696,20 @@ html { scroll-padding-top: 80px; }
       <div class="faq-group">The problem</div>
       <details class="faq-item">
         <summary>What is porch piracy?</summary>
-        <div class="faq-a"><p>Porch piracy is the theft of delivered packages left unattended at a doorstep, porch, or lobby before the recipient retrieves them. It is a last-mile problem: the package has been delivered correctly, but nothing secures it between the driver's hand and the homeowner's.</p><p>Industry estimates put the scale at more than 120 million packages stolen from U.S. doorsteps a year, roughly $12 billion in annual losses across consumers and industry, and about one in four U.S. households reporting a stolen package within a year.</p></div>
+        <div class="faq-a"><p>Porch piracy is the theft of delivered packages left unattended at a doorstep, porch, or lobby before the recipient retrieves them. It is a last-mile problem: the package has been delivered correctly, but nothing secures it between the driver's hand and the homeowner's.</p><p>The U.S. Postal Service Office of Inspector General put the scale at <a href="https://www.uspsoig.gov/node/8974" target="_blank" rel="noopener">at least 58 million packages stolen in 2024</a>, with estimated annual losses between $5.2 billion and $16 billion depending on the survey, and up to one in four Americans affected. The OIG also notes there is no single authoritative source for package theft data, which is why estimates vary.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>How big is porch piracy, by the numbers?</summary>
+        <div class="faq-a"><p>Two current sources, one federal and one industry survey, line up on the shape of the problem:</p>
+        <ul>
+          <li><strong>At least 58 million packages stolen in 2024</strong>, estimated losses of $5.2 billion to $16 billion a year, and an average stolen package worth $50 to $204. (<a href="https://www.uspsoig.gov/node/8974" target="_blank" rel="noopener">USPS Office of Inspector General, Package Theft in the United States, RISC-WP-25-002, May 2025</a>)</li>
+          <li><strong>Three in ten American adults, about 80 million people, have had a package stolen</strong>, up from 24 percent a year earlier. An estimated 47.7 million people were victims in the past year, with stolen packages worth about $7.7 billion. (<a href="https://www.security.org/package-theft/annual-report/" target="_blank" rel="noopener">Security.org, 2026 Package Theft Report, survey of 3,494 U.S. adults, October 2026</a>)</li>
+          <li><strong>Peak season is the stress test.</strong> Adults expect about 28 deliveries each between October and December, 49 percent worry more about theft during the holidays, and 37 percent have hesitated to place an online order because of theft concerns. (Security.org, 2026)</li>
+          <li><strong>Density multiplies the risk.</strong> Apartment residents were more than three times as likely as single-family homeowners to have a package stolen in the past three months (10 percent versus 3 percent). (Security.org, 2026)</li>
+          <li><strong>The losses are concentrated where carriers run their densest routes.</strong> Estimated 2024 losses were $945 million in New York City, $450 million in Philadelphia, $262 million in Chicago, $232 million in Washington, D.C., and $207 million in Houston. (SafeWise, as cited in the USPS OIG report)</li>
+          <li><strong>Volume is still climbing.</strong> U.S. e-commerce revenue is projected to grow from $1.22 trillion in 2024 to $1.88 trillion by 2029, and parcel volume from 21.7 billion in 2023 to a forecast 28.3 billion in 2028. (Statista and Pitney Bowes, as cited in the USPS OIG report)</li>
+        </ul>
+        <p>The OIG report is also candid about why the fix has stalled: retailers often absorb the replacement cost rather than inconvenience the customer, carriers have no obligation to use a customer-provided lockbox, and the fragmented reporting across retailers, carriers, and police means no one has a full picture. One national retailer told the OIG it had pulled business from delivery providers because lost-package claims had become unaffordable. That is the gap a verified, locked hand-off at the door is designed to close.</p></div>
       </details>
       <details class="faq-item">
         <summary>Who actually pays for porch piracy?</summary>
